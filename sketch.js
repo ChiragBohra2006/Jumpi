@@ -65,7 +65,9 @@ function draw() {
     if(ball.isTouching(block2))
     {
         ball.shapeColor = "red";
-        
+        music.pause();
+        ball.velocityX = 0;
+        ball.velocityY = 0;
         
     }
 
